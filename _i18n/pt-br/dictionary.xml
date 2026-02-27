@@ -878,4 +878,8 @@
   <block id="1fff298355326f8c77bd77059a41c1a2" category="sidebar">Limitações no Azure</block>
   <block id="9a3a0c4b2afbb088e029484d4b34ba8b" category="sidebar">Limitações no Google Cloud</block>
   <block id="b67ce24b0ef9db5e8910cc39a69b1ef6" category="sidebar">Integrações com provedores de nuvem</block>
+  <block id="788284c720310fdf4e22fb09b5f7931d" category="section-title">9.17.1 P4 (17 de fevereiro de 2026)</block>
+  <block id="23da396e754fd62d532665d492e38437" category="paragraph">O patch P4 do Cloud Volumes ONTAP 9.17.1 já está disponível para atualização na AWS, Azure e Google Cloud. O Console solicitará que você atualize seus sistemas existentes para este patch.</block>
+  <block id="cae74b75cb879fa6011c4bc1e9acafed" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P4</block>
+  <block id="ef67d3bea0bd0f84efe8b5e0a8f4cd58" category="paragraph"><block ref="d5c398b0cc19baa27e1d3dab8cc29789" category="inline-link-macro-rx"></block> (NetApp site de suporte, é necessário login).</block>
 </blocks>

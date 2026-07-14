@@ -18,6 +18,7 @@ Cloud Volumes ONTAP possui limites de configuração de storage para garantir op
 
 
 
+[[maximum-system-capacity-by-license]]
 == Capacidade máxima do sistema por licença
 
 A capacidade máxima do sistema inclui o armazenamento em disco mais o storage de objetos usado para o tiering de dados.
@@ -26,6 +27,7 @@ NetApp não suporta exceder o limite de capacidade do sistema. Se você atingir 
 
 Em algumas configurações, os limites de disco impedem que você atinja o limite de capacidade usando apenas discos. Nesses casos, você pode atingir o limite de capacidade por meio de  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["tiering de dados inativos para storage de objetos"^]. Consulte os limites de capacidade e de disco abaixo para mais detalhes.
 
+[[cap-license-aws]]
 .Limite de capacidade para licenças baseadas em capacidade
 Com o licenciamento baseado em capacidade, cada sistema Cloud Volumes ONTAP suporta tiering para storage de objetos. A capacidade total em camadas pode ser escalada até o limite do bucket do provedor de nuvem. Embora a licença não imponha restrições de capacidade, você deve seguir o  https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Práticas recomendadas do FabricPool"^] para garantir desempenho, confiabilidade e eficiência de custos ideais ao configurar e gerenciar o tiering. Consulte o  https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html["Documentação da AWS"^] para obter mais informações.
 
@@ -59,6 +61,7 @@ Não, não conta. Os dados em um par de HA da AWS são espelhados de forma sínc
 
 
 
+[[aggregate-limits]]
 == Limites de agregado
 
 Cloud Volumes ONTAP usa volumes EBS como discos e os agrupa em agregados. Os agregados fornecem armazenamento para os volumes.
@@ -97,6 +100,7 @@ Notas:
 
 
 
+[[disk-and-tiering-limits-by-ec2-instance]]
 == Limites de disco e de armazenamento em camadas por instância EC2
 
 Os limites de capacidade variam dependendo da família de instâncias EC2 que você utiliza e se você está usando um sistema de nó único ou um par de HA.
@@ -113,6 +117,7 @@ Os limites não incluem o disco de inicialização e o disco raiz.
 
 
 
+[[limits-for-different-deployment-modes-of-capacity-based-licensing]]
 === Limites para diferentes modos de implantação do modelo de licenciamento baseado em capacidade
 
 Os seguintes limites de disco aplicam-se aos sistemas Cloud Volumes ONTAP que utilizam um pacote de licenciamento baseado em capacidade. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["Saiba mais sobre as opções de licenciamento do Cloud Volumes ONTAP"^]
@@ -168,6 +173,7 @@ NOTE: Para obter os limites máximos de capacidade do sistema e de capacidade de
 
 
 
+[[limits-for-different-deployment-modes-of-node-based-licensing]]
 === Limites para diferentes modos de implantação do licenciamento baseado em nós
 
 Os seguintes limites de disco aplicam-se aos sistemas Cloud Volumes ONTAP que utilizam licenciamento baseado em nós, que é o modelo de licenciamento de geração anterior que permitia licenciar Cloud Volumes ONTAP por nó. O licenciamento baseado em nós ainda está disponível para clientes existentes.
@@ -272,6 +278,7 @@ As regiões AWS Secret Cloud e Top Secret Cloud suportam compras de múltiplas l
 
 
 
+[[storage-vm-limits]]
 == Limites de Storage VM
 
 Algumas configurações permitem que você crie VMs de armazenamento adicionais (SVMs) para Cloud Volumes ONTAP.
@@ -316,6 +323,7 @@ As VMs de armazenamento que você configurar para recuperação de desastres (DR
 
 
 
+[[storage-vm-limit-by-ec2-instance-type]]
 === Limite de VM de armazenamento por tipo de instância EC2
 
 Ao criar uma VM de armazenamento adicional, você precisa alocar endereços IP privados para a porta e0a. A tabela abaixo identifica o número máximo de IPs privados por interface, bem como o número de endereços IP disponíveis na porta e0a após a implantação do Cloud Volumes ONTAP. O número de endereços IP disponíveis afeta diretamente o número máximo de VMs de armazenamento para essa configuração.
@@ -417,6 +425,7 @@ Como requer um endereço IP privado, isso limita o número de VMs de armazenamen
 
 
 
+[[file-and-volume-limits]]
 == Limites de arquivo e volume
 
 [cols="22,22,56"]
@@ -459,6 +468,7 @@ Como requer um endereço IP privado, isso limita o número de VMs de armazenamen
 
 
 
+[[iscsi-storage-limits]]
 == Limites de storage iSCSI
 
 [cols="3*"]

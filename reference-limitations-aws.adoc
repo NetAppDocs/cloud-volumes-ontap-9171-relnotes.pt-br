@@ -18,6 +18,7 @@ As seguintes limitações conhecidas são específicas do Cloud Volumes ONTAP na
 
 
 
+[[aws-outpost-limitations]]
 == Limitações do AWS Outpost
 
 Se você tiver um AWS Outpost, poderá implantar Cloud Volumes ONTAP nesse Outpost selecionando a VPC do Outpost durante a implantação. A experiência é a mesma que em qualquer outra VPC que reside na AWS. Observe que você precisará primeiro implantar um agente Console no seu AWS Outpost.
@@ -31,6 +32,7 @@ Há algumas limitações a destacar:
 
 
 
+[[flash-cache-limitations]]
 == Limitações do Flash Cache
 
 Os tipos de instância C5D e R5D incluem armazenamento NVMe local, que Cloud Volumes ONTAP utiliza como _Flash Cache_. Observe as seguintes limitações:
@@ -44,12 +46,14 @@ Você pode escolher não definir eficiência de storage ao criar um volume no Ne
 
 
 
+[[false-alarms-reported-by-amazon-cloudwatch]]
 == Falsos alarmes relatados pela Amazon CloudWatch
 
 Cloud Volumes ONTAP não libera CPUs quando ociosas, então  https://aws.amazon.com/cloudwatch/["Amazon CloudWatch"^] pode relatar um aviso de CPU alta para a instância EC2 porque vê 100% de uso. Você pode ignorar esse alarme. O comando statistics do ONTAP exibe o uso real das CPUs.
 
 
 
+[[cloud-volumes-ontap-ha-pairs-do-not-support-immediate-storage-giveback]]
 == Os pares de HA do Cloud Volumes ONTAP não suportam giveback imediato de storage
 
 Após a reinicialização de um nó, o parceiro deve sincronizar os dados antes de poder devolver o armazenamento. O tempo necessário para ressincronizar os dados depende da quantidade de dados gravados pelos clientes enquanto o nó estava inativo e da velocidade de gravação de dados durante o tempo de giveback.

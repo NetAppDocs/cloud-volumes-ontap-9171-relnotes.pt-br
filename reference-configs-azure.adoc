@@ -18,6 +18,7 @@ Várias configurações do Cloud Volumes ONTAP são suportadas no Azure.
 
 
 
+[[supported-configurations-by-license]]
 == Configurações suportadas por licença
 
 Cloud Volumes ONTAP está disponível no Azure como um sistema de nó único e como um par de HA para tolerância de falhas e operações não disruptivas.
@@ -30,6 +31,7 @@ Para obter as especificações das instâncias suportadas, consulte o https://le
 
 
 
+[[single-node-systems]]
 === Sistemas de nó único
 
 Você pode escolher entre as seguintes configurações de licenciamento baseadas em capacidade ou em nós ao implantar Cloud Volumes ONTAP como um sistema de nó único no Azure.
@@ -252,6 +254,7 @@ Da mesma forma, se você escolher Discos Gerenciados SSD Premium para um ambient
 ====
 
 
+[[ha-pairs]]
 === Pares de HA
 
 Você pode escolher entre as seguintes configurações ao implantar Cloud Volumes ONTAP como um par de HA no Azure.
@@ -552,12 +555,14 @@ Notas:
 ====
 
 
+[[supported-disk-sizes]]
 == Tamanhos de disco suportados
 
 No Azure, um agregado pode conter até 12 discos que são todos do mesmo tipo e tamanho.
 
 
 
+[[single-node-systems]]
 === Sistemas de nó único
 
 Sistemas de nó único usam Discos Gerenciados do Azure. Os seguintes tamanhos de disco são suportados:
@@ -600,6 +605,7 @@ Sistemas de nó único usam Discos Gerenciados do Azure. Os seguintes tamanhos d
 |===
 
 
+[[ha-pairs]]
 === Pares de HA
 
 Os pares de HA usam Azure Managed Disks. Os seguintes tipos e tamanhos de disco são suportados.
@@ -619,6 +625,7 @@ Os pares de HA usam Azure Managed Disks. Os seguintes tipos e tamanhos de disco 
 
 
 
+[[supported-regions]]
 == Regiões suportadas
 
 Para suporte à região do Azure, veja  https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes Regiões globais"^].

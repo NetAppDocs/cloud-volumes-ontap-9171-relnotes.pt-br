@@ -102,7 +102,6 @@
   <block id="98ade5346ada08656e0c7b517b695d0f" category="paragraph">Cada licença do Cloud Volumes ONTAP suporta diferentes tipos de instâncias EC2. Para sua conveniência, a tabela abaixo mostra a quantidade de vCPUs, RAM e largura de banda para cada tipo de instância suportado.<block ref="7fe5ce03f92ccda8dcb0aa0fab836a1f" category="inline-link-rx"></block></block>
   <block id="afea36f2c9999a231c58b7e9dcf3b16e" category="paragraph">Cloud Volumes ONTAP pode ser executado em uma instância EC2 reservada ou sob demanda. Soluções que utilizam outros tipos de instância não são suportadas.</block>
   <block id="c7d741925ef81824617c6a2975104e27" category="inline-link">NetApp Technical Report 4383: Caracterização de desempenho do Cloud Volumes ONTAP na Amazon Web Services com cargas de trabalho de aplicativos</block>
-  <block id="b710bbf07a9ba1fa06f2e6f4e77a42db" category="paragraph">As larguras de banda mostradas na tabela abaixo correspondem aos limites documentados da AWS para cada tipo de instância. Esses limites não correspondem totalmente ao que Cloud Volumes ONTAP pode fornecer. Para o desempenho esperado, consulte <block ref="c23654021de34c23e6d408104aa3bf49" category="inline-link-rx"></block>.</block>
   <block id="794df3791a8c800841516007427a2aa3" category="cell">Licença</block>
   <block id="4a7243646d30fc1e81eca2df9826cc03" category="cell">Instância suportada</block>
   <block id="5d56dbd20d9ee1ab8a722ff12e331953" category="cell">vCPU</block>
@@ -890,4 +889,5 @@
   <block id="c7bcac860b797f27404d6345b36c3e95" category="paragraph">O patch P6 do Cloud Volumes ONTAP 9.17.1 já está disponível para atualização na AWS, Azure e Google Cloud. O Console solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
   <block id="4d90d21642c7222312363da000d7409f" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P6</block>
   <block id="9cc7d1e306d6a5fe0c2d14528a2bbb0d" category="paragraph"><block ref="d1851ca2607b699d731598b241fc23ed" category="inline-link-macro-rx"></block> (NetApp site de suporte, é necessário login).</block>
+  <block id="fb83bdf454bf964031306f46d967b051" category="paragraph">As larguras de banda mostradas na tabela abaixo correspondem aos limites documentados da AWS para cada tipo de instância. Esses limites não correspondem totalmente ao que Cloud Volumes ONTAP pode fornecer. Para o desempenho esperado, consulte <block ref="f9e25e1e3616de01564541c204317f8f" category="inline-link-rx"></block>.</block>
 </blocks>
